@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}Honey Local SEO{{ else }}{{ .Title }} | Honey Local SEO{{ end }}</title>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}Local SEO guides for small businesses: Google My Business, citations, reviews and map rankings.{{ end }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}Local SEO guides for small businesses: Google My Business, citations, reviews and map rankings.{{ end }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="stylesheet" href="/css/main.css">
+{{ if .IsHome }}<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Honey Local SEO","description":"Local SEO guides for small businesses: Google My Business, citations, reviews and map rankings."}
+</script>{{ end }}
+</head>
+<body>
+<header>
+  <a href="/" class="site-title">Honey Local SEO</a>
+  <button id="menu-toggle">☰</button>
+  <nav id="nav-menu">
+    <a href="/">Home</a>
+    <a href="/posts/">Articles</a>
+  </nav>
+</header>
+<main>
+{{ block "main" . }}{{ end }}
+</main>
+<footer>
+  <p>&copy; {{ now.Year }} Honey Local SEO &mdash; All rights reserved.</p>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>

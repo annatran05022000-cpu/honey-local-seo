@@ -1,0 +1,16 @@
+
+baseURL = "/"
+languageCode = "en-us"
+title = "Honey Local SEO"
+theme = "custom"
+
+[params]
+  description = "Local SEO guides for small businesses: Google My Business, citations, reviews and map rankings."
+  author = "Editorial Team"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
