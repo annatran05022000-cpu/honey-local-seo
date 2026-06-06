@@ -1,4 +1,9 @@
 ---
+image: "photo-1522071820081-009f0129c71c"
+cover:
+  image: "photo-1522071820081-009f0129c71c"
+  alt: "cover"
+  relative: false
 title: "Welcome to Honey Local SEO"
 date: 2026-06-01
 description: "Local SEO guides for small businesses: Google My Business, citations, reviews and map rankings."
